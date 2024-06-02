@@ -5,7 +5,7 @@ module.exports = (router) => {
   //rule
   router.get("/agent/check_apikey", AuthenticateAPIKey.check_apikey, agentController.test_api);
   router.post("/agent/rule/write", AuthenticateAPIKey.check_apikey, ruleController.save_rule_agent);
-
+  router.get("/demo", agentController.test_api);
 }
 
 
