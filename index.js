@@ -30,7 +30,6 @@ const options = {
 const server = https.createServer(options, app);
 
 server.listen(parseInt(process.env.PORT, 10) || 8889, () => {
-    console.log(certPath)
     console.log(`Server listen ${process.env.PORT}`);
 });
 
